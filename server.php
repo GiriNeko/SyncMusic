@@ -43,7 +43,7 @@ define("DEBUG", false);
 define("USE_X_REAL_IP", true);
 
 // 是否使用 Redis 来储存歌单数据
-define("USE_REDIS", true);
+define("USE_REDIS", false);
 
 // Redis 地址
 define("REDIS_HOST", "127.0.0.1");
@@ -56,19 +56,19 @@ define("REDIS_PASS", "");
 
 // 音乐信息获取 API，默认是 ZeroDream 的 API
 // 可自行搭建，参考：https://github.com/mengkunsoft/MKOnlineMusicPlayer
-define("MUSIC_API", "https://cdn.zerodream.net/netease");
+define("MUSIC_API", "https://api.ineko.cc/netease/mko");
 
 // Python3 可执行文件位置
 define("PYTHON_EXEC", "/usr/bin/python3");
 
 // 客户端聊天冷却时间，单位秒
-define("MIN_CHATWAIT", 3);
+define("MIN_CHATWAIT", 1);
 
 // 聊天内容的最大长度
 define("MAX_CHATLENGTH", 200);
 
 // 音乐的最大长度，单位秒，超过不能点
-define("MAX_MUSICLENGTH", 300);
+define("MAX_MUSICLENGTH", 600);
 
 // 每个用户最多可以点多少首歌
 define("MAX_USERMUSIC", 5);
