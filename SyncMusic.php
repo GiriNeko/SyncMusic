@@ -48,7 +48,7 @@ class SyncMusic {
 	{
 		if(!file_exists(ROOT . "/tmp/")) mkdir(ROOT . "/tmp/");
 		if(!file_exists(ROOT . "/random.txt")) {
-			$data = @file_get_contents("https://cdn.zerodream.net/download/music/random.txt");
+			$data = @file_get_contents("https://api.ineko.cc/netease/mko/list.txt");
 			@file_put_contents(ROOT . "/random.txt", $data);
 		}
 	}
