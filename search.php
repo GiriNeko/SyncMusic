@@ -1,6 +1,6 @@
 <?php
 // 你的 API 服务器地址
-define("API_URL", "https://cdn.zerodream.net/netease");
+define("API_URL", "https://api.ineko.cc/netease/mko");
 if(isset($_GET['s']) && !empty($_GET['s'])) {
 	$keyWord = urlencode($_GET['s']);
 	$rawdata = @file_get_contents(API_URL . "/api.php?source=netease&types=search&name={$keyWord}&count=10&pages=1");
