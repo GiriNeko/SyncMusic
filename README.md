@@ -29,7 +29,8 @@
 
 ## 在线预览
 
-ZeroDream：[Akkariin 点歌台](https://music.tql.ink/)
+~~ZeroDream：[Akkariin 点歌台](https://music.tql.ink/)~~(已失效)
+GiriNeko:[自助点歌台](https://music.ineko.cc/)
 
 > 如果你想将你的点歌台列在这里，请开一个 Issues 并写上你的点歌台地址。
 
