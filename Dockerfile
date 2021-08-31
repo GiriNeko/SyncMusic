@@ -8,6 +8,8 @@ RUN cd /tmp && \
     apk add libstdc++ python3 tzdata && \
     cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
     echo "Asia/Shanghai" > /etc/timezone && \
+    touch /usr/local/etc/php/conf.d/timezone.ini && \
+    echo "date.timezone = Asia/Shangha" > /usr/local/etc/php/conf.d/timezone.ini && \
     docker-php-ext-install swoole && \
     docker-php-ext-enable swoole && \
     pip3 install -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple mutagen
